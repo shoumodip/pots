@@ -143,8 +143,9 @@ window.onload = async () => {
       ctx.fillRect(0, 0, app.width, app.height * 0.1)
 
       ctx.font = app.height * 0.07 + "px November"
+      ctx.textAlign = "left"
       ctx.fillStyle = "#d4be98"
-      ctx.fillText(game.score, app.width * 0.05, app.height * 0.08)
+      ctx.fillText(game.score, app.width * 0.02, app.height * 0.08)
 
       for (let i = 0; i < game.life; i++) {
         drawPot(app.width - (0.5 + i) * app.height * 0.06, app.height * 0.045, app.height * 0.03)
